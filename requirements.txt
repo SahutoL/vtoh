@@ -3,7 +3,7 @@ cffi==1.16.0
 charset-normalizer==3.3.2
 click==8.1.7
 cryptography==42.0.8
-decouple
+python-decouple
 dj-database-url==2.2.0
 Django==4.2.13
 gunicorn==22.0.0
