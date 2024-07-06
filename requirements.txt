@@ -4,6 +4,8 @@ charset-normalizer==3.3.2
 cryptography==42.0.8
 dj-database-url==2.2.0
 Django==4.2.13
+gunicorn==22.0.0
+packaging==24.1
 pdfminer.six==20231228
 pycparser==2.22
 pycryptodome==3.20.0
