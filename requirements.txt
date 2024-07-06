@@ -1,0 +1,13 @@
+asgiref==3.8.1
+cffi==1.16.0
+charset-normalizer==3.3.2
+cryptography==42.0.8
+dj-database-url==2.2.0
+Django==4.2.13
+pdfminer.six==20231228
+pycparser==2.22
+pycryptodome==3.20.0
+python-dotenv==1.0.1
+sqlparse==0.5.0
+typing_extensions==4.12.2
+whitenoise==6.7.0
