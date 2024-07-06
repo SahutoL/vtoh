@@ -14,7 +14,7 @@ services:
     branch: main
     healthCheckPath: /
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn vtoh.asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "python -m gunicorn vtoh.asgi:application -k vtoh.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
