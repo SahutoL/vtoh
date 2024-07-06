@@ -13,7 +13,7 @@ SUPERUSER_PASSWORD = os.getenv('SUPERUSER_PASSWORD')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'pdf-to-txt.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'pdf-to-txt-49ny.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -57,7 +57,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'vtoh.wsgi.application'
 
 default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
-DATABASES = {'default': dj_database_url.config(default=default_dburl)}
+DATABASES = {
+    "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
+}
 
 LANGUAGE_CODE = 'ja'
 
