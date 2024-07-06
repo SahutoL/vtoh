@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'vtoh.wsgi.application'
 
 default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
 DATABASES = {
-    "default": config("DATABASE_URL", default=default_dburl, cast=dburl),
+    "default": config("DATABASE_URL", default=default_dburl, cast=dj_database_url.parse),
 }
 
 LANGUAGE_CODE = 'ja'
