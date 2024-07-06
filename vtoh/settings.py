@@ -1,3 +1,4 @@
+from decouple import config
 from pathlib import Path
 from dotenv import load_dotenv
 import os, dj_database_url
